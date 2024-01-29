@@ -1,0 +1,22 @@
+<div class="login-container">
+    <div class="login-content">
+      <mat-toolbar class="login-toolbar" style="background-color: #d75b2c;color:white">My App</mat-toolbar>
+      <mat-card>
+        <form [formGroup]="loginForm"  (ngSubmit)="onSubmit()">
+          <mat-form-field>
+            <mat-icon matPrefix>person_outline</mat-icon>
+            <input autofocus type="text" matInput placeholder="Username" formControlName="username">
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-icon matPrefix>lock_outline</mat-icon>
+            
+            <input type="password" autocomplete="false" matInput placeholder="Password" formControlName="password">
+          <span *ngIf="loginForm.get('password')?.hasError('invalidPassword')"> Password must be 8 characters length</span>
+          </mat-form-field>
+
+          <button type="submit"  mat-raised-button  [disabled]="loginForm.invalid" style="background-color: #d75b2c;color:white">Login</button>
+        </form>
+      </mat-card>
+    </div>
+  </div>

@@ -1,0 +1,69 @@
+<div class="wrapper">
+  <!-- Header -->
+
+  <!-- Left Side Menu -->
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav mode="side" opened class="sidenav">
+      <!-- Add your menu items here -->
+      <mat-list>
+        <mat-list-item >
+          <mat-icon>home</mat-icon>Home
+           
+        </mat-list-item>
+
+        <mat-list-item  >
+          <mat-icon>help</mat-icon>About
+      
+        </mat-list-item>
+
+       
+
+        <!-- Add more items as needed -->
+      </mat-list>
+    </mat-sidenav>
+
+    <!-- Body Section -->
+    <mat-sidenav-content class="content">
+      <mat-toolbar>
+        <span>Dashboard
+        </span>
+
+        <span class="spacer"></span>
+
+        <div class="name">
+          <span>
+            Hello
+          </span>
+          <span>Sujith</span>
+        </div>
+        <mat-icon (click)="breakPopUp()" class="settings">help</mat-icon>
+      </mat-toolbar>
+      <div class="body">
+      
+
+
+       <div *ngFor="let product of Retaildata" class="custom-card">
+        <mat-card>
+          <img mat-card-image [src]="product.productCategoryImage">
+          <mat-card-content>
+            <p>
+              {{product.productCategoryName}}
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+
+
+    
+
+      </div>
+
+      <div class="footer">
+        <p>&copy; 2023 My Angular Material Dashboard</p>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  <!-- Footer -->
+</div>

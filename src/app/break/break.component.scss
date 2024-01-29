@@ -1,0 +1,49 @@
+
+  .header
+  {
+    padding: 60px 0px 6px 265px;
+  }
+  .breakIcons
+  {
+    margin-bottom: -7px;
+    color: brown;
+  }
+  .warn
+  {
+    border: 3px solid white;
+  
+    background-color: brown;
+    color: white;
+    font-size: 20px;
+    left: 80%;
+    bottom: -70px;
+    font-style: italic;
+    font-weight: 900;
+    font-family: serif;
+    
+  }
+  .listItems
+  {
+    padding: 0px 0px 6px 265px;
+  }
+  .descriptionText
+  {
+    color: black;
+    font-style: italic;
+    font-weight: 900;
+    font-family: serif;
+    font-size: 18px;
+  }
+.break
+  {
+    background-image: url(/assets/time.jpg);
+
+  /* Full height */
+
+height:100%;
+width:100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
